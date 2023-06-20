@@ -67,11 +67,12 @@ namespace ATV07_JOGOS
             if (resultado2 == vencedor)
             {
                 Console.WriteLine("você chegou a vinte um , parabéns você venceu");
-                
+
             }
             else
             {
                 Console.WriteLine($"você desejou para por aqui o seu valor final é{resultado} ");
+                Console.ReadKey();
                 Console.Clear();
                 return;
             }
@@ -86,12 +87,13 @@ namespace ATV07_JOGOS
             if (resultado2 > vencedor)
             {
                 Console.WriteLine("você estorou e infelizmente perdeu ;[");
+                Console.ReadKey();
                 return;
             }
             if (resultado2 == vencedor)
             {
                 Console.WriteLine("Parabéns você ganhou o jogo");
-               
+
             }
             if (resposta3 == "sim")
             {
@@ -103,6 +105,7 @@ namespace ATV07_JOGOS
             else
             {
                 Console.WriteLine($"você desejou parar por aqui o seu valor final é {resultado2} ");
+                Console.ReadKey();
                 Console.Clear();
             }
             if (resultado3 > 21)
@@ -113,10 +116,15 @@ namespace ATV07_JOGOS
             if (resultado3 == vencedor)
             {
                 Console.WriteLine("você chegou a vinte um , parabéns você venceu");
-                
+
 
             }
-            Console.WriteLine($"o seu resultado agora é{resultado3}, você deseja mais um numero ?");
+            else
+            {
+                Console.WriteLine($"o seu resultado agora é{resultado3}, você deseja mais um numero ?");
+                Console.ReadKey();
+                Console.Clear();
+            }
             Console.Write("- sim");
             Console.WriteLine("- não");
             string resposta5 = Console.ReadLine();
@@ -148,9 +156,8 @@ namespace ATV07_JOGOS
         }
     }
 }
-            
-        
-    
+
+
 
 
 
